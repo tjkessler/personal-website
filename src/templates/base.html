@@ -1,0 +1,68 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+
+    {% if title %}
+        Travis J. Kessler - {{ title }}
+    {% else %}
+        Travis J. Kessler
+    {% endif %}
+
+{% endblock %}
+
+{% block styles %}
+
+    <link href = '{{bootstrap_find_resource('css/bootstrap.css', cdn='bootstrap')}}' rel='stylesheet'>
+    <link rel = 'shortcut icon' href = '{{ url_for('static', filename='images/favicon.ico') }}'>
+    <link rel = 'stylesheet' type = 'text/css' href = '{{ url_for('static', filename='style.css') }}'>
+
+{% endblock %}
+
+{% block navbar %}
+
+    <nav class = 'navbar navbar-default navbar-custom justify-content-center'>
+        <div class = 'navbar-header'>
+            <button type = 'button' class = 'navbar-toggle collapsed toggle-custom' data-toggle = 'collapse' data-target = '#bs-example-navbar-collapse-1' aria-expanded = 'false'>
+                <span class = 'sr-only'>Toggle Navigation</span>
+                <span class = 'icon-bar'></span>
+                <span class = 'icon-bar'></span>
+                <span class = 'icon-bar'></span>
+            </button>
+        </div>
+        <div class = 'collapse navbar-collapse' id = 'bs-example-navbar-collapse-1'>
+            <ul class = 'nav navbar-nav'>
+                <li>
+                    <div class = 'navbar-title'>
+                        Travis J. Kessler
+                    </div>
+                </li>
+                <li class = 'navbar-link'><a href = '{{ url_for('index') }}'>Home</a></li>
+                <li class = 'navbar-link'><a href = '{{ url_for('research') }}'>Research</a></li>
+                <li class = 'navbar-link'><a href = '{{ url_for('projects') }}'>Projects</a></li>
+                <li class = 'navbar-link'>
+                    <a href = 'https://www.linkedin.com/in/traviskessler'>
+                        <img src = '{{ url_for('static', filename = 'images/logos/linkedin.png') }}' width='15px' height='15px'>
+                    </a>
+                </li>
+                <li class = 'navbar-link'>
+                    <a href = 'https://github.com/tjkessler'>
+                        <img src = '{{ url_for('static', filename = 'images/logos/github.png') }}' width='15px' height='15px'>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+{% endblock %}
+
+{% block content %}
+
+    <div class = 'container'>
+        <div class = 'app_content'>
+            {% block app_content %}
+            {% endblock %}
+        </div>
+    </div>
+
+{% endblock %}

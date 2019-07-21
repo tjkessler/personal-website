@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% block app_content %}
+
+<div>
+
+    <h1>About Me</h1>
+
+    <p>
+        <br>
+        I am a doctoral candidate in the Electrical and Computer Engineering department at the University of Massachusetts Lowell.
+        My research focuses on machine learning and artificial intelligence, and applications include developing multivariate
+        regression models to predict key combustion properties of potentially cleaner and more efficient fuel compounds.
+        <br><br>
+        In addition to having experience with machine learning models such as neural networks, I have significant interest in
+        optimization algorithms such as artificial bee colonies and genetic algorithms for hyper-parameter tuning and input variable
+        selection for neural networks.
+        <br><br>
+        <a href = '{{ url_for('static', filename='files/kessler_travis_cv.pdf') }}' target = '_blank'>View my current curriculum vitae</a>
+    </p>
+
+</div>
+
+{% endblock %}

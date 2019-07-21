@@ -1,0 +1,61 @@
+@font-face
+{
+    font-family: 'Roboto Regular';
+    src: url('custom_fonts/Roboto-Regular.ttf');
+}
+
+body
+{
+    background-color: #f8f8f8;
+    font-family: 'Roboto Regular'
+}
+
+.toggle-custom
+{
+    background-color: transparent !important;
+}
+
+.toggle-custom:hover
+{
+    background-color: transparent !important;
+}
+
+.toggle-custom span
+{
+    background-color: #f8f8f8 !important;
+}
+
+.navbar-custom
+{
+    background-color: #3c3c3c !important;
+}
+
+.navbar-link
+{
+    color: #f8f8f8 !important;
+}
+
+.navbar-title
+{
+    color: #f8f8f8 !important;
+    height: 100%;
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+.navbar-link:hover
+{
+    background-color: #007219 !important;
+}
+
+.navbar-link a
+{
+    color: inherit !important;
+}
+
+.app_content a
+{
+    color: #007219 !important;
+}
