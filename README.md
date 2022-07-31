@@ -1,3 +1,3 @@
 # personal-website
 
-http://www.traviskessler.com/
+https://www.traviskessler.com/
