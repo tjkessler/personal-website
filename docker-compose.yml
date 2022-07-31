@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    container_name: 'traviskessler-website'
+    build: .
+    ports:
+      - '5000:5000'
