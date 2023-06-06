@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% block app_content %}
+
+<div>
+
+    <h1>Hobbies</h1>
+
+    <br>
+    <h3>Mechanical keyboards</h3>
+    <br>
+
+    Being someone who more or less types for a living, I'm obsessed with finding the best feeling, 
+    best sounding, and best looking keyboards. My current daily-driver is a dark blue 
+    <a href="https://kbdfans.com/products/tofu-jr">Tofu Jr.</a> with a PVD gold weight, with 
+    <a href="https://www.amazon.com/DUROCK-Keyboard-Gold-Plated-Transculent-Mechanical/dp/B0B6ZTKDM8">DUROCK L5 Smokey Blue switches</a>, 
+    <a href="https://www.amazon.com/DUROCK-Stabilizers-Translucent-Keyboard-Mechanical/dp/B0B2RVN19F">DUROCK V2 Smokey stabilizers</a>, 
+    and <a href="https://drop.com/buy/drop-mt3-dusk-keycap-set">MT3 Dusk keycaps</a>. 
+    Can you guess my favorite color? &#128521;
+
+    <br><br>
+
+    Keyboard kits are fun, especially those that require soldering. So far my soldered-keyboard 
+    collection includes the <a href="https://nullbits.co/nibble/">Nibble 65</a> and the 
+    <a href="https://mechwild.com/product/orange-boy-ergo/">Orange Boy Ergo</a>.
+
+    <br>
+
+    <br>
+    <h3>My "homelab"</h3>
+    <br>
+
+    My prior DevOps experience introduced me to some of the basics of IT/sysadmin work, specifically 
+    networking, virtualization, and server/app hosting. I no longer perform these tasks professionally, 
+    but why let the skills I learned go to waste?
+
+    <br><br>
+
+    Turning these skills into a hobby was seamless... once I had the right equipment. Since I was 
+    setting everything up at home I had a few constraints for my hardware: 1.) low power consumption, 
+    2.) a small physical footprint, and 3.) it should operate as quiet as possible (heat is currently 
+    not a factor - the U.S. Northeast can get pretty cold!).
+    
+    <br><br>
+    
+    I found that small- and micro-form-factor enterprise hardware was perfect, 
+    specifically second-hand hardware. Computers like the 
+    <a href="https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/OptiPlex-7050-Towers-Technical-Specifications.pdf">Dell OptiPlex 7050 Micro</a> 
+    are extremely small, quiet, and consume about as much power as an incandescent light bulb. A 7050 
+    configured with an i5/i7 processor and at least 16GB of RAM is a genuine powerhouse. I have a couple 
+    of these. For storage, I opted for a <a href="https://buy.hpe.com/us/en/compute/proliant-microserver/proliant-microserver/proliant-microserver/hpe-proliant-microserver-gen10-plus/p/1012241014">HP ProLiant MicroServer Gen10 Plus</a>, 
+    equipped with three <a href="https://www.westerndigital.com/products/internal-drives/wd-red-sata-hdd#WD20EFAX">6TB Western Digital Red HDDs</a> in RAIDZ1.
+
+    <br><br>
+
+    I worked with <a href="https://www.vmware.com/products/esxi-and-esx.html">VMWare ESXI</a> in the past, but nowadays I usually opt for open-source solutions when 
+    they're available. Therefore, the primary operating system on all my server hardware is <a href="https://www.proxmox.com/en/">Proxmox</a>. 
+    All other operating systems are virtualized through it. This includes <a href="https://www.truenas.com/">TrueNAS</a> for storage 
+    management and backups (with direct hardware pass-through), one <a href="https://ubuntu.com/download/server">Ubuntu Server</a> instance per machine for 
+    hosting <a href="https://www.docker.com/">Docker</a> containers, and other various Linux distributions as needed for game server 
+    hosting, custom images/OSes, and personal projects. Other more specialized devices are also in use, 
+    including micro PCs acting as <a href="https://www.pfsense.org/">pfSense</a> routers and network-wide 
+    <a href="https://pi-hole.net/">DNS filters</a>.
+
+    <br><br>
+
+    I host a slew of services, apps, and websites on my homelab. I have roughly 11TB of usable storage 
+    which is used for backups (virtual machine snapshots, important files/documents, etc.) and media hosting 
+    for my family and friends. This website, among others, is self-hosted using Docker, Cloudflare, and 
+    a local proxy manager!
+
+    <br>
+
+    <br>
+    <h3>Music interests</h3>
+    <br>
+
+    I grew up listening to classic rock - Led Zeppelin, Pink Floyd, Jimi Hendrix, Stevie Ray Vaughan, Eric 
+    Clapton, ZZ Top, pretty much anything with a very strong lead guitar. The saxophone, however, is in my 
+    opinion one of the most versatile and unique-sounding instruments out there. It is used effectively in 
+    classical/orchestral, jazz, blues, big band, classic rock, and even modern pop, not to mention its 
+    pleasantly-surprising cameos in virtually every other genre. My all time favorites are Clarence Clemons 
+    (and his son Jake, who sounds eerily similar to his father; don't believe me? Listen to this live performance of 
+    <a href="https://open.spotify.com/track/2XWTmXnanTc2bEKIzRtnT4?si=c7ef90267ba742e6">The General</a> 
+    by DISPATCH), Benny Golson, and of course John Coltrane.
+
+    <br><br>
+
+    I started playing the alto saxophone at age 10 and was a natural. Throughout middle and high school I 
+    played first chair in both concert (orchestral) band and jazz band. I also picked up the guitar during 
+    high school, taking lessons from a phenomenal guitar instructor, <a href="https://www.dansitarmusiclessons.com/bio/">Dan Sitar</a>. 
+    Like, really, this guy is insane at his craft. 6/6 would recommend. Unfortunately my musical inclinations 
+    were put on the back burner during college, however I'm sure getting back into it is just like re-learning 
+    how to ride a bike... right? &#129310;
+
+    <br><br>
+
+    Right now my <a href="https://open.spotify.com/playlist/37i9dQZF1EpnGF6nXz8DQR?si=a68bb94f40644239">Spotify On Repeat playlist</a> is populated with Marcus King, Sturgill Simpson, Chris Stapleton, 
+    Miranda Lambert, Tyler Childers, Hank Williams Jr., Journey, Chicago, Michael Jackson, Tracy Chapman, 
+    Red Hot Chili Peppers, and others (country is my guilty pleasure &#129312;).
+
+</div>
+
+{% endblock %}
