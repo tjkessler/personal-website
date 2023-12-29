@@ -1,0 +1,151 @@
+\documentclass{letter}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\pagenumbering{gobble}
+\newcolumntype{L}{@{}l@{\extracolsep{\fill}}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan
+}
+\urlstyle{same}
+
+\begin{document}
+
+    \setlength\tabcolsep{0.0pt}
+    \begin{tabular*}{\linewidth}{L r}
+        \Large \textbf{Dr. Travis J. Kessler} & \large \url{travis.j.kessler@gmail.com} \\
+        \large Easton, NY 12154 & \large \url{https://www.traviskessler.com} \\
+        \large (978) 201-7710 & \large \url{https://github.com/tjkessler}
+    \end{tabular*}
+
+    \medskip \medskip \hrule \medskip
+
+    \normalsize
+
+    \noindent Machine learning engineer and data scientist with more than nine years of experience in academic research and open-source software development. Confident in directing teammates and students as a project manager and instructor. Capable of communicating across numerous scientific, engineering, and business disciplines. Achievements include successfully developing machine learning models to efficiently discover cleaner, economically viable liquid fuels and fuel additives. Skilled in applied machine learning, data mining/pipelining, probability and statistics, and software engineering development/management.
+
+    \medskip
+
+    \large \textbf{\underline{TECHNICAL SKILLS}} \medskip \small
+
+    \setlength\tabcolsep{0.4cm}
+    \begin{tabular*}{\linewidth}{p{4.85cm} p{5.1cm} p{4.75cm}}
+        \tabitem Python, C/C++, MATLAB & \tabitem Predictive/statistical modeling & \tabitem AWS, GCS, Azure \\
+        \tabitem TensorFlow/Keras, PyTorch & \tabitem Clustering and classification & \tabitem SQL (Postgres, MySQL) \\
+        \tabitem Scikit-learn, NumPy, Pandas & \tabitem Regression and transformers & \tabitem NoSQL (MongoDB) \\
+        \tabitem Jupyter Notebook & \tabitem Data visualization & \tabitem Git/SVN \\
+        \tabitem OpenCV & \tabitem Web scraping & \tabitem Docker
+    \end{tabular*}
+
+    \medskip \large \textbf{\underline{EDUCATION}} \medskip \normalsize
+
+    \setlength\tabcolsep{1.25cm}
+    \begin{tabular*}{\linewidth}{P{5.85cm} P{5.5cm}}
+        \textbf{PhD Computer Engineering} & \textbf{BS Computer Engineering} \\
+        \textit{University of Massachusetts Lowell} & \textit{University of Massachusetts Lowell} \\
+        May 2023 & May 2018
+    \end{tabular*}
+
+    \medskip \large \textbf{\underline{EXPERIENCE}} \medskip \normalsize
+
+    \setlength\tabcolsep{0cm}
+    \begin{tabular*}{\linewidth}{L r}
+        \textbf{Research Engineer} & \textit{Oct. 2023 --- Present} \\
+        \textit{AIMdyn, Inc.} & 
+    \end{tabular*}
+
+    \small
+    \begin{itemize}[leftmargin=0.75cm]
+        \setlength{\itemsep}{0pt}
+        \item Utilizes Koopman Operator Theory-based generative AI and other cutting-edge machine learning methods for the analysis, prediction, and control of complex dynamical systems
+        \item Implements modular and scalable MLOps/data pipelines to efficiently process and store models, parameters, and results/metrics
+    \end{itemize}
+    \normalsize
+
+    \begin{tabular*}{\linewidth}{L r}
+        \textbf{Graduate Researh Assistant} & \textit{Jan. 2019 --- Sep. 2023} \\
+        \textit{University of Massachusetts Lowell Energy \& Combustion Research Laboratory} & 
+    \end{tabular*}
+
+    \small
+    \begin{itemize}[leftmargin=0.75cm]
+        \setlength{\itemsep}{0pt}
+        \item Leveraged predictive models (deep learning, graph neural networks, etc.) to advance alternative fuel research
+        \item Investigated methods for neural network feature selection and hyper-parameter tuning, including random forest trees, principal component analysis, artificial bee colonies, and various optimization algorithms
+        \item Evaluated predictor/target variable relationships using a variety of statistical methods
+        \item Managed a team of undergraduate computer science/engineering students to support research efforts
+        \item Published research efforts in \textit{The Proceedings of the Combustion Institute}, \textit{The Journal of Open Source Software}, and the \textit{American Society of Mechanical Engineers Internal Combustion Engine Fall Conference}
+    \end{itemize}
+    \normalsize
+
+    \begin{tabular*}{\linewidth}{L r}
+        \textbf{Implementation/DevOps Engineer} & \textit{June 2018 --- Jan. 2019} \\
+        \textit{Valora Technologies} & 
+    \end{tabular*}
+
+    \small
+    \begin{itemize}[leftmargin=0.75cm]
+        \setlength{\itemsep}{0pt}
+        \item Extracted text/numerical information from legal, financial, and government documents
+        \item Constructed data pipelines to usher client documents from intake to delivery of data (ETL)
+        \item Trained newly hired DevOps engineers in data pipelining/mining workflow configuration
+    \end{itemize}
+    \normalsize
+
+    \newpage
+
+    \begin{tabular*}{\linewidth}{L r}
+        \textbf{Undergraduate Research Assistant} & \textit{June 2015 --- May 2018} \\
+        \textit{University of Massachusetts Lowell Energy \& Combustion Research Laboratory} & 
+    \end{tabular*}
+
+    \small
+    \begin{itemize}[leftmargin=0.75cm]
+        \setlength{\itemsep}{0pt}
+        \item Optimized predictive models to predict chemical properties based on molecular structure (QSAR/QSPR)
+        \item Implemented optimal neural network architectures for multidimensional input and target data
+        \item Developed open-source machine learning, feature extraction, and hyper-parameter tuning software packages
+        \item Published research efforts in \textit{Fuel}, \textit{The Journal of Open Source Software}, and the \textit{American Society of Mechanical Engineers Internal Combustion Engine Fall Conference}
+    \end{itemize}
+    \normalsize
+
+    \medskip \large \textbf{\underline{SELECTED AWARDS \& HONORS}} \medskip \small
+
+    \begin{tabular*}{\linewidth}{L r}
+        Dean’s Gold Medal for Outstanding Academic Achievement & \textit{May 2023} \\
+        Computer Engineering Department Award for Outstanding Ph.D. & \textit{May 2023} \\
+        Best Presentation, ASME ICEF 2019 Conference & \textit{Oct. 2019} \\
+        $ 1^{st} $ place, Symbotic Warehouse Robot Prototyping Competition & \textit{May 2018} \\
+        Innovative Technology Solution, UMass Lowell DifferenceMaker 50K Idea Challenge & \textit{April 2017} \\
+        $ 1^{st} $ place, Francis College of Engineering Prototyping Competition & \textit{Dec. 2016}
+    \end{tabular*}
+
+    \medskip \large \textbf{\underline{PUBLISHED WORKS}} \medskip \footnotesize
+
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular*}{\linewidth}{p{0.08\linewidth} p{0.92\linewidth}}
+        PB12. & Fnu Gorky, Apolo Nambo, \textbf{Travis J. Kessler}, J. Hunter Mack, Maria L. Carreon. “$ CO_2 $ and HPDE Upcycling: A Plasma Catalysis Alternative”. \textit{Industrial \& Engineering Chemistry Research} (2023). \url{https://doi.org/10.1021/acs.iecr.3c02403} \\
+        PB11. & Amina SubLaban, \textbf{Travis Kessler}, Noah Van Dam, J. Hunter Mack. “Artificial Neural Network Models for Octane Number and Octane Sensitivity: A Quantitative Structure Property Relationship Approach to Fuel Design”. \textit{Journal of Energy Resources Technology} (2023). \url{https://doi.org/10.1115/1.4062189} \\
+        PB10. & \textbf{Travis Kessler}, Amina SubLaban, J. Hunter Mack. “Predicting the Cetane Number, Sooting Tendency, and Energy Density of Terpene Fuel Additives”. \textit{ASME Internal Combustion Engine Division Fall Technical Conference} (2022). \url{https://doi.org/10.1115/ICEF2022-91163} \\
+        PB9. & \textbf{Travis Kessler}, Thomas Schwartz, Hsi-Wu Wong, J. Hunter Mack. “Evaluating Diesel/Biofuel Blends Using Artificial Neural Networks and Linear/Nonlinear Equations”. \textit{ASME Internal Combustion Engine Division Fall Technical Conference} (2021). \url{https://doi.org/10.1115/ICEF2021-67785} \\
+        PB8. & \textbf{Travis Kessler}, Thomas Schwartz, Hsi-Wu Wong, J. Hunter Mack. “Predicting the Cetane Number, Yield Sooting Index, Kinematic Viscosity, and Cloud Point for Catalytically Upgraded Pyrolysis Oil Using Artificial Neural Networks”. \textit{ASME Internal Combustion Engine Division Fall Technical Conference} (2020). \url{https://doi.org/10.1115/ICEF2020-2978} \\
+        PB7. & \textbf{Travis Kessler}, Peter C. St. John, Junqing Zhu, Charles S. McEnally, Lisa D. Pfefferle, J. Hunter Mack. “A comparison of computational models for predicting yield sooting index”. \textit{Proceedings of the Combustion Institute} (2020). \url{https://doi.org/10.1016/j.proci.2020.07.009} \\
+        PB6. & \textbf{Travis Kessler}, Thomas Schwartz, Hsi-Wu Wong, J. Hunter Mack. “Screening Compounds for Fast Pyrolysis and Catalytic Biofuel Upgrading Using Artificial Neural Networks”. \textit{ASME Internal Combustion Engine Division Fall Technical Conference} (2019). \url{https://doi.org/10.1115/ICEF2019-7170} \\
+        PB5. & Sanskriti Sharma, Hernan Gelaf-Romer, \textbf{Travis Kessler}, J. Hunter Mack. “ECabc: A feature tuning program focused on Artificial Neural Network hyperparameters”. \textit{Journal of Open Source Software} (2019). \url{https://doi.org/10.21105/joss.01420} \\
+        PB4. & \textbf{Travis Kessler}, Eric Sacia, Alexis Bell, J. Hunter Mack. “Artificial neural network based predictions of cetane number for furanic biofuel additives”. \textit{Fuel}, 206, 171-179 (2017). \url{https://doi.org/10.1016/j.fuel.2017.06.015} \\
+        PB3. & \textbf{Travis Kessler}, Gregory Dorian, J. Hunter Mack. “Application of a Rectified Linear Unit (ReLU) Based Artificial Neural Network to Cetane Number Predictions”. \textit{ASME Internal Combustion Engine Division Fall Technical Conference} (2017). \url{https://doi.org/10.1115/icef2017-3614} \\
+        PB2. & \textbf{Travis Kessler}, J. Hunter Mack. “ECNet: Large scale machine learning projects for fuel property prediction”. \textit{Journal of Open Source Software} (2017). \url{https://doi.org/10.21105/joss.00401} \\
+        PB1. & \textbf{Travis Kessler}, Eric Sacia, Alexis Bell, J. Hunter Mack. “Predicting the Cetane Number of Furanic Biofuel Candidates Using an Improved Artificial Neural Network Based on Molecular Structure”. \textit{ASME Internal Combustion Engine Division Fall Technical Conference} (2016). \url{https://doi.org/10.1115/icef2016-9383}
+    \end{tabular*}
+
+\end{document}
