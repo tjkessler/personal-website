@@ -16,8 +16,3 @@ def research():
 @app.route('/projects')
 def projects():
     return render_template('projects.html')
-
-
-@app.route('/hobbies')
-def hobbies():
-    return render_template('hobbies.html')
